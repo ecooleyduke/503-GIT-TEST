@@ -15,6 +15,9 @@ adjectives = ["brilliant", "overcaffeinated"]
 # Add a new type of noun (people, AI terms, Duke references, etc.)
 nouns = ["data scientist", "Blue Devil"]
 
+# Throw some adverbs in the mix
+adverbs = ["effortlessly", "curiously", "merrily"]
+
 # Add a verb related to coding, AI, or something fun!
 verbs = ["debugged", "fine-tuned"]
 
@@ -26,10 +29,11 @@ tools = ["TensorFlow", "GitHub Copilot"]
 
 # Select one item randomly from each list
 adj = random.choice(adjectives)
+adv = random.choice(adverbs)
 noun = random.choice(nouns)
 verb = random.choice(verbs)
 place = random.choice(places)
 tool = random.choice(tools)
 
 # Final Madlib sentence – feel free to update this if you add a new category!
-print(f"At the {place}, a {adj} {noun} {verb} an AI model using {tool}.")
+print(f"At the {place}, a {adj} {noun} {adv} {verb} an AI model using {tool}.")
